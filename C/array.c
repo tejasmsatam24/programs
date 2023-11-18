@@ -17,5 +17,5 @@ float average(int array[]) {
     for (int i = 0; i < N; i++) {
         sum += array[i]; 
     }
-    return sum/(float)3;
+    return sum/(float)N;
 }
