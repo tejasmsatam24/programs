@@ -24,12 +24,14 @@ public class Bow {
         System.out.println(strArray);
         for(int i = 0; i < strArray.size()-1; i++) {
             int count = 0;
-            for(int j = 0; j < strArray.size(); j++) {
-                if(strArray.get(i).equals(strArray.get(j))) {
+                if(strArray.get(i).equals(strArray.get(i+1))) {
                     count += 1;
+                    if(i+1 == strArray.size()){
+                        intArray.add(count);
+                    }
                 }
                 intArray.add(count);
-            }
         }
+        System.out.println(intArray);
     }
 }
